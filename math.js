@@ -5,12 +5,12 @@ function add(a, b) {
 
 function multiply(a, b) {
   let result = a * b;
-  return result + 1; // REMOVED the + 1
+  return result; // REMOVED the + 1
 }
 
 function isOdd(num) {
   // CHANGED == 0 to != 0 to correctly identify odd numbers
-  return num % 2 == 0; 
+ return num % 2 !== 0;
 }
 
 module.exports = { add, multiply, isOdd }
